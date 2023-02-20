@@ -1,8 +1,16 @@
-[{meson.build,PKGBUILD}]
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+[{meson.build,PKGBUILD,Dockerfile,Containerfile}]
 indent_style = tab
 indent_size = 4
 
-[*.{cc,hh,cpp,hpp,h,sh,md,cfg,sample}]
+[*.{cc,hh,cpp,hpp,c,h,sh,md,cfg,py,sample,spec,containerfile}]
 indent_style = tab
 indent_size = 4
 
